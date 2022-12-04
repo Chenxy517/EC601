@@ -15,7 +15,7 @@ class Node(object):
         else:
             self.attribute = attribute
             self.type = NodeType.ATTRIBUTE
-            self.label = "%s.%s" % (self.table, self.attribute)
+            self.label = ("%s.%s", (self.table, self.attribute))
 
 
     def add_attribute(self, node):

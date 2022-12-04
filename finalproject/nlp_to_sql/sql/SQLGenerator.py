@@ -56,7 +56,7 @@ class SQLGenerator(object):
 
         self.get_table_mappings(self.node_dict['tables'])
 
-        for keyword, values in self.node_dict.iteritems():
+        for keyword, values in self.node_dict.items():
             if keyword == "select":
                 _select = ", ".join(values)
             elif keyword == "tables":

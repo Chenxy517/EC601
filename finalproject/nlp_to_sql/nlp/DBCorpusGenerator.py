@@ -12,6 +12,7 @@ class DBCorpusGenerator(object):
     def create_db_corpus(self, database, path):
         tables = {
             'campuses': ['location'],
+            'classes': ['name', 'student_id', 'age']
             # 'courses': ['peoplesoft_course_id', 'name'],
             # 'faculty': ['first_name', 'last_name', 'name'],
             # 'sections': ['section_number'],

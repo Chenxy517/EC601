@@ -94,7 +94,7 @@ class Database(object):
     def seed(self):
         seeds = Seeder().get_seeds()
 
-        for table_name, items in seeds.iteritems():
+        for table_name, items in seeds.items():
             statement = "INSERT INTO %s " % table_name
             statement += "(%s) VALUES " % ", ".join(items[0].keys())
             statement += "(%s)" % ", ".join(["%s" for _ in range(len(items[0].keys()))])
@@ -120,7 +120,7 @@ class Database(object):
                 return
 
             sizetable = [map(len, map(str, row)) for row in results]
-            widths = map(max, zip(*sizetable))
+            widths = list(map(max, zip(*sizetable)))
 
             for cd in cursor.description:
                 columns.append(cd[0])

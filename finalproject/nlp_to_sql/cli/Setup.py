@@ -19,6 +19,7 @@ class Setup(object):
         # Download wordnet corpora
         self.comm.say("Downloading WordNet corpora.")
         nltk.download("wordnet")
+        nltk.download('omw-1.4')
 
 
         self.setup_db(force)

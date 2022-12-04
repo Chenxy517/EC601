@@ -1,4 +1,5 @@
 from nltk.tokenize.stanford import StanfordTokenizer
+import os
 
 class Tokenizer(object):
     """
@@ -9,6 +10,8 @@ class Tokenizer(object):
 
 
     def tokenize(self, sentence):
+        java_path = "D:/Software/Java/jdk-18.0.1.1/bin/java.exe"
+        os.environ['JAVAHOME'] = java_path
         return self.tokenizer.tokenize(sentence)
 
 

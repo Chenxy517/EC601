@@ -51,6 +51,7 @@ class Runner(object):
 
             sql_generator = SQLGenerator(tree, self.schema_graph)
             sql = sql_generator.get_sql()
+            print("Generated SQL: ", sql)
 
             if debug:
                 self.print_debug(doc, tree, sql)

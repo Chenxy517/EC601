@@ -5,3 +5,17 @@ This project can parse the natural input language and transform it into correspo
 Takes in natural language, and return SQL language according to specific SQL database.
 ## User Stories
 I am a engineer that has never learned SQL before. Now I want to query a SQL database with natural language.
+## Test Result
+This is a simple result of test based on a local SQL database:
+
+Firstly, Stanford NLP tools need to be downloaded and extracted.
+
+![image](https://github.com/Chenxy517/EC601/blob/main/finalproject/img/test_result_1.png)
+
+Secondly, train the NLP models with given database until deviation is stablized.
+
+![image](https://github.com/Chenxy517/EC601/blob/main/finalproject/img/test_result_2.png)
+
+Finally, clients can post any natural language questions to the program and get a corresponding SQL query.
+
+![image](https://github.com/Chenxy517/EC601/blob/main/finalproject/img/test_result_3.png)
